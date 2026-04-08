@@ -1,21 +1,26 @@
-MIT License
+Tech-Bazaar Source Code License – 2026
 
 Copyright (c) 2026 SHADOW269
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This repository contains the source code for the Tech-Bazaar platform.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is granted to view, study, and modify this code for personal,
+educational, and non-commercial purposes.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+You may reuse parts of the code in your own learning projects or portfolio
+experiments.
+
+However, the following are NOT permitted without explicit permission
+from the author:
+
+1. Rehosting this project as a competing marketplace platform
+2. Using the Tech-Bazaar name, branding, or identity
+3. Deploying this project publicly as a production service
+4. Redistributing the full project as your own work
+
+Personal assets, branding elements, and deployment configurations
+related to store.shadow269.in are not included in this permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+THE AUTHOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM USE
+OF THIS SOFTWARE.

@@ -1,0 +1,151 @@
+
+{
+  "entities": {
+    "UserProfile": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "UserProfile",
+      "type": "object",
+      "description": "Represents a user's profile information, including contact details and public display data.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the UserProfile entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The full name of the user."
+        },
+        "email": {
+          "type": "string",
+          "description": "The email address of the user.",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string",
+          "description": "The user's phone number, expected in Indian format (e.g., +91XXXXXXXXXX)."
+        },
+        "profileImage": {
+          "type": "string",
+          "description": "URL to the user's profile picture stored in Firebase Storage.",
+          "format": "uri"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp indicating when the user profile was created, in ISO 8601 format (IST timezone).",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "email",
+        "createdAt"
+      ]
+    },
+    "ProductListing": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ProductListing",
+      "type": "object",
+      "description": "Represents a single product listing posted by a user for sale.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the ProductListing entity."
+        },
+        "userId": {
+          "type": "string",
+          "description": "Reference to the UserProfile who posted this listing. (Relationship: UserProfile 1:N ProductListing)"
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the product listing."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the product being sold."
+        },
+        "price": {
+          "type": "number",
+          "description": "The price of the product in Indian Rupees (INR)."
+        },
+        "category": {
+          "type": "string",
+          "description": "The category of the product (e.g., keyboard, mouse, GPU, laptop)."
+        },
+        "city": {
+          "type": "string",
+          "description": "The city where the product is located for sale."
+        },
+        "state": {
+          "type": "string",
+          "description": "The state where the product is located for sale (optional)."
+        },
+        "images": {
+          "type": "array",
+          "description": "An array of URLs to images of the product stored in Firebase Storage.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp indicating when the listing was created, in ISO 8601 format (IST timezone).",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "title",
+        "description",
+        "price",
+        "category",
+        "city",
+        "images",
+        "createdAt"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userId}",
+        "definition": {
+          "entityName": "UserProfile",
+          "schema": {
+            "$ref": "#/backend/entities/UserProfile"
+          },
+          "description": "Stores individual user profiles. The `userId` parameter matches the authenticated user's UID.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The unique identifier of the user."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/listings/{listingId}",
+        "definition": {
+          "entityName": "ProductListing",
+          "schema": {
+            "$ref": "#/backend/entities/ProductListing"
+          },
+          "description": "Stores all marketplace listings.",
+          "params": [
+            {
+              "name": "listingId",
+              "description": "The unique identifier for a specific product listing."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

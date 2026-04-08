@@ -1,0 +1,29 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "kb1",
+      "description": "Mechanical Keyboard - RGB",
+      "imageUrl": "https://picsum.photos/seed/kb1/600/400",
+      "imageHint": "mechanical keyboard"
+    },
+    {
+      "id": "ms1",
+      "description": "Gaming Mouse",
+      "imageUrl": "https://picsum.photos/seed/ms1/600/400",
+      "imageHint": "gaming mouse"
+    },
+    {
+      "id": "gpu1",
+      "description": "NVIDIA Graphics Card",
+      "imageUrl": "https://picsum.photos/seed/gpu1/600/400",
+      "imageHint": "graphics card"
+    },
+    {
+      "id": "lp1",
+      "description": "Premium Laptop",
+      "imageUrl": "https://picsum.photos/seed/lp1/600/400",
+      "imageHint": "laptop"
+    }
+  ]
+}

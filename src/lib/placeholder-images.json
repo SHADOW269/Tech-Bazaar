@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "kb1",
+      "description": "Mechanical Keyboard - RGB",
+      "imageUrl": "https://picsum.photos/seed/kb1/600/400",
+      "imageHint": "mechanical keyboard"
+    },
+    {
+      "id": "ms1",
+      "description": "Logitech Gaming Mouse",
+      "imageUrl": "https://picsum.photos/seed/ms1/600/400",
+      "imageHint": "gaming mouse"
+    },
+    {
+      "id": "gpu1",
+      "description": "NVIDIA RTX 3060 Ti",
+      "imageUrl": "https://picsum.photos/seed/gpu1/600/400",
+      "imageHint": "graphics card"
+    },
+    {
+      "id": "lp1",
+      "description": "MacBook Air M1",
+      "imageUrl": "https://picsum.photos/seed/lp1/600/400",
+      "imageHint": "laptop"
+    }
+  ]
+}
