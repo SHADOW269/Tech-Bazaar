@@ -113,7 +113,7 @@ If you test the platform and notice bugs or issues, please report them.
 Created by **SHADOW269**
 
 Project Link:
-[https://github.com/SHADOW269/Tech-Bazaar](Project Repo)
+[Project Repo](https://github.com/SHADOW269/Tech-Bazaar)
 
 ---
 
